@@ -8,7 +8,9 @@
     pkgs.nodejs
     pkgs.openssl
   ];
-  env = {};
+  env = {
+    DATABASE_URL="file:./dev.db";
+  };
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
